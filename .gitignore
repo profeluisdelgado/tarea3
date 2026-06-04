@@ -1,0 +1,60 @@
+# ==========================================
+# Entornos Virtuales y Dependencias Locales
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+lib/
+lib64/
+bin/
+include/
+share/
+pyvenv.cfg
+pip-selfcheck.json
+
+# ==========================================
+# Caches de Compilación de Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# ==========================================
+# Configuración e Historial de Streamlit
+# ==========================================
+.streamlit/
+
+# ==========================================
+# Archivos de Entorno de Desarrollo (IDEs)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# Archivos de Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# Notas y Buenas Prácticas MLOps (IMPORTANTE)
+# ==========================================
+# En proyectos de nivel empresarial o con modelos de gran escala:
+# 1. Los archivos binarios de modelos (*.pkl, *.joblib) NO deben trackearse en Git.
+#    Se recomienda usar un Model Registry (MLflow, Vertex AI, etc.) o DVC (Data Version Control).
+# 2. Los datasets grandes (*.csv, *.parquet) deben ser almacenados en buckets (S3, GCS) y versionados con DVC.
+#
+# Para esta tarea/entorno académico, puedes mantenerlos si son livianos. Si deseas ignorarlos, descomenta abajo:
+#
+# dataset_referencia.csv
+# modelo_final.pkl
